@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1e293b;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h2 {
+  color: #60a5fa;
+  text-transform: lowercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+.home {
+  background: #eef6ff;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 80px;
+  gap: 40px;
+}
+
+#home span {
+  color: #60a5fa;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+#home h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+#home p {
+  margin-top: 15px;
+  color: #64748b;
+}
+
+.hero-image img {
+  width: 350px;
+  border-radius: 24px;
+  background: #bfdbfe;
+  padding: 10px;
+}
+
+.about {
+  background: #e0efff;
+}
+
+section {
+  padding: 80px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #2e4e7e;
+}
+
+section p {
+  max-width: 700px;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.edu {
+  background: #dbeafe;
+}
+
+.edu-bg {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.edu-bg h3 {
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+.expertise {
+  background: #bfdbfe;
+}
+
+#expertise table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(96, 165, 250, 0.15);
+}
+
+#expertise th,
+#expertise td {
+  padding: 14px 18px;
+  text-align: left;
+}
+
+#expertise th {
+  background: #60a5fa;
+  color: #ffffff;
+}
+
+#expertise tr:nth-child(even) {
+  background: #f1f5ff;
+}
+
+.contact {
+  background: #e0efff;
+}
+
+form {
+  max-width: 500px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #60a5fa;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #221c8d;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 13px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: #ffffff;
+  color: #64748b;
+  margin-top: 20px;
+}
+
+footer i {
+  font-size: 22px;
+  margin-left: 15px;
+  color: #60a5fa;
+}
+
+footer i:hover {
+  color: #1855b8;
+}
