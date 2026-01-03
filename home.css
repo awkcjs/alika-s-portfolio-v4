@@ -72,7 +72,44 @@ nav a:hover {
 
 #home p {
   margin-top: 15px;
+  margin-bottom: 24px;
   color: #64748b;
+}
+
+.button-see {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1f1b8f;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.button-see span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-see span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-see:hover span {
+  padding-right: 25px;
+}
+
+.button-see:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .hero-image img {
@@ -232,4 +269,119 @@ footer i {
 
 footer i:hover {
   color: #1855b8;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  section {
+    padding: 60px 40px;
+  }
+
+  #home {
+    gap: 30px;
+  }
+
+  .hero-image img {
+    width: 300px;
+  }
+}
+
+#about {
+  text-align: left;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #home {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  #home h1 {
+    font-size: 32px;
+  }
+
+  .hero-image img {
+    width: 260px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  section h2 {
+    text-align: center;
+  }
+
+  section p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .button-see {
+    width: auto;
+    padding: 12px 20px;
+    font-size: 4px;
+    border-radius: 4px;
+  }
+
+  #about {
+    text-align: left;
+  }
+
+  .edu-bg {
+    text-align: center;
+  }
+
+  #expertise {
+    overflow-x: auto;
+  }
+
+  #expertise table {
+    min-width: 100px;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+  .button {
+    margin-top: 10px;
+    padding: 13px 28px;
+    border-radius: 4px;
+    background: #1e1b8f;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background: #312e81;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  footer div {
+    display: flex;
+    gap: 20px;
+  }
 }
